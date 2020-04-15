@@ -125,8 +125,7 @@ body { background-color: #eff8f5 }
 }
 
 .container-flexbox .item-3 {
-	background-color: #fff;
-	box-shadow: rgba(160,160,160,0.8) 5px 5px 20px;
+	background-color: #ff5000;
 	border-radius: 12px;
 }
 
@@ -204,7 +203,7 @@ body { background-color: #eff8f5 }
 }
 
 .container-flexbox .item-1 p a {
-	color: #fff;
+	color: #ff5000;
 	font-weight: bold;	
 	text-decoration: none;
 	border-bottom-style:solid;
@@ -229,7 +228,7 @@ body { background-color: #eff8f5 }
 .container-flexbox .item-4-2 h3 { 
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700; 
-	color: #ff5000;
+	color: #fff;
 	line-height: 1.2;
 	margin-bottom: 2px;
 	letter-spacing: 2px;
@@ -240,6 +239,7 @@ body { background-color: #eff8f5 }
 .container-flexbox .item-4-2 p { 
 	font-family: 'Roboto Slab', serif;
 	font-weight: 500;
+	color: #fff;
 	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))); 
 	line-height: 1.7;
 	margin-bottom: 14px;
@@ -252,7 +252,7 @@ body { background-color: #eff8f5 }
 }
 
 .container-flexbox.happy-users {
-	background-color: #fff
+	background-color: #fff;
 }
 
 .container-flexbox.happy-users .item-3-2 p {
@@ -423,3 +423,94 @@ body { background-color: #eff8f5 }
 }
 
 /* =============== END CONTACT FORM CSS ============= */
+
+/* == Begin footer CSS == */
+
+/* Outer footer parent container */
+.container-footer { 
+	display: flex;
+	justify-content: space-between;
+   flex-wrap: wrap;
+   background-color:#044d6c;
+}
+
+/* Desktop footer - inside padding  */
+@media all and (min-width:768px) {
+	.container-footer { padding: 3% 8% 3% 8% }
+}
+
+/* Mobiles footer - inside padding */
+@media all and (max-width:767px) {
+	.container-footer { padding: 12% 8% 1% 8% }
+}
+
+/* Inner footer columns */
+
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+   .container-footer .item-3:nth-child(1) { width: 20% }
+   .container-footer .item-3:nth-child(2) { 
+      width: 50%;
+      /* text-align: center */
+   }
+   .container-footer .item-3:nth-child(3) { 
+      width: 20%;
+   }
+}
+
+/* Mobiles - 1 column */
+@media all and (max-width:767px) { 
+	.container-footer .item-3 { 
+      width: 100%;
+      margin-bottom: 10%
+   }
+   .container-footer .item-3:nth-child(2) { order: 1 }
+   .container-footer .item-3:nth-child(1) { order: 2 }
+   .container-footer .item-3:nth-child(3) { order: 3 } 
+}
+
+/* Styles for footer background, text, icons and links */
+
+.container-footer .item-3 h4,
+.container-footer .item-3 p,
+.container-footer .item-3 p i,
+.container-footer .item-3 p a {
+   color: #fff
+}
+
+.container-footer .item-3 h4 {
+   font-weight: bold;
+   /* text-transform: uppercase */
+   margin-bottom: 12px;
+   font-size: calc(17px + (19 - 17) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.container-footer .item-3 p {
+   font-weight: normal;
+   margin-bottom: 12px;
+   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+   line-height: 1.6
+}
+
+.container-footer .item-3 i { 
+   padding-right: 26px;
+} 
+
+.container-footer .item-3 p a {
+   text-decoration: none;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   padding-bottom:2px;
+}
+
+.container-footer .item-3 p a:link, 
+.container-footer .item-3 p a:visited  {
+   border-bottom-color: transparent;
+}
+
+.container-footer .item-3 p a:hover, 
+.container-footer .item-3 p a:active  {
+   border-bottom-color: #fff
+}
+
+/* == End footer CSS == */
