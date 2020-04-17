@@ -35,6 +35,74 @@
 
 <body>
 
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-dark menu-sticky">
+        <!-- first child item -->
+        <a href="#"><img src="assets/img/software-logo.png" alt="website logo"></a>  
+
+        <!-- second child item -->
+		<ul>
+		  <li><a href="#features">Features</a></li>
+		  <li><a href="#benefits">Benefits</a></li>
+		  <li><a href="#testimonials">Testimonials</a></li>
+		  <li><a href="#free-trial" class="btn-cta">Start Your Free Trial</a></li>  
+		</ul>
+    </div>
+    <!-- End desktop menu -->
+
+
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-dark menu-sticky">
+            <!-- first child -->
+            <a href="#"><img src="assets/img/software-logo.png" alt="website logo"></a>  
+
+            <!-- second child -->
+            <div class="item-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    <!-- End mobile menu bar -->
+
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-dark">
+		<ul>
+		  <li><a href="#features">Features</a></li>
+		  <li><a href="#benefits">Benefits</a></li>
+		  <li><a href="#testimonials">Testimonials</a></li>
+		  <li><a href="#free-trial" class="btn-cta">Free Trial</a></li>  
+		</ul>
+
+        <hr>
+        <h4>About Me</h4>
+        <div class="fly-out-profile-box">
+            <img src="../../assets/img/profile-pic.jpg" alt="Caoaln Noonan web designer, Dublin">  
+
+            <p>Hi, I'm <b>Caolan Noonan</b>, a web and digital designer based in Dublin, Ireland.</p>
+        </div>
+   
+        <h4>Contact</h4>
+        <p>Have a project you'd like to discuss? Let's make something great together!</p>
+
+        <h5><a href="tel:0881234567">088 123 4567</a></h5>
+
+        <h5><a href="mailto:noonanc11@gmail.com" target="_blank" rel="noopener noreferrer">noonanc11@gmail.com</a></h5>
+
+        <h4>Social Links</h4>
+        <div class="fly-out-social-icons">
+            <a href="https://www.github.com/ibat-web-dev" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
+            <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/ibatcollegedublin/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/IBATcollege" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    <!-- End mobile menu slide-out options -->
+
 	<!-- Begin hero block -->
 	<div class="container-flexbox hero-block">
 		<div class="item item-2">
@@ -56,7 +124,7 @@
 	</div><!-- End parent flexbox container -->
 
 	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-light-grey">
+	<div class="container-flexbox bg-light-grey" id="features">
 		<div class="item-1">
 			<h2>What we offer</h2>
 			<p>Say 'Hello' to a simple yet powerful user analytics system. IBAT Analytics tells you all you need to know about your website traffic, without tracking or storing your visitors' personal information. </p>
@@ -86,7 +154,7 @@
 	</div><!-- End parent flexbox container -->
 	
 	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-light-grey">
+	<div class="container-flexbox bg-light-grey" id="benefits">
 		<div class="item-1">
 			<h2>How you benefit</h2>
 			<p>IBAT Analytics helps you focus on what's important: your business.</p>
@@ -117,7 +185,7 @@
 	</div><!-- End parent flexbox container -->
 
 	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
-	<div class="container-flexbox bg-green bg-light-grey">
+	<div class="container-flexbox bg-green bg-light-grey" id="testimonials">
 		<div class="item-1">
 			<img src="assets/img/dashboard.png" alt="Analytics dashboard">
 		</div>
@@ -160,7 +228,7 @@
         <p>Enjoy unlimited access for 14 days. No credit card required.</p>
 
         <!-- Forn begins here -->
-		<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" action="https://formspree.io/ibat.training@gmail.com">
+		<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" action="https://formspree.io/noonanc11@gmail.com">
 			<div class="flex-row">
 				<label for="email-address">Email:</label>
                 <input type="text" id="email-address" name="email-address" placeholder="Your email address" maxlength="80" autocapitalize="none" required>
@@ -205,8 +273,9 @@
 	</div>
 	
 	<!-- End HTML footer -->
-
 	
+	<script src="assets/javascript/script.js"></script>
+
 	<!-- JavaScript for Cookie Consent Popup Message -->
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
