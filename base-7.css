@@ -129,7 +129,7 @@ p {
   }
 
   .important-note-3 h3 { 
-    margin-top: 0; s
+    margin-top: 0;
   }
 
   .important-note-4 { 
@@ -153,5 +153,5 @@ p {
 
   .important-note-3 p { 
     margin-bottom: 0;  
-    color: #fff;
+    color: #000;
   }
