@@ -481,7 +481,7 @@ a.fancy-link:hover, a.fancy-link:active {
     padding-bottom: 2px;
 }
 
-a.fancy-link:link, a.fancy-link:visited { color: #501B1D; border-bottom-color: #501B1D; }
+a.fancy-link:link, a.fancy-link:visited { color: #fff; border-bottom-color: #fff; }
 
 a.fancy-link:hover, a.fancy-link:active { color: #ADADAD; border-bottom-color: #ADADAD; }
 
